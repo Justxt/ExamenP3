@@ -32,13 +32,13 @@ namespace ExamenP3.ViewModels
             set { bromaselec = value; OnPropertyChanged(nameof(broma)); }
         }
 
-        public ICommand FetchJokeCommand { get; }
-        public ICommand SaveJokeCommand { get; }
+        public ICommand FetchBroma { get; }
+        public ICommand GuardarBroma { get; }
 
         public ChisteViewModel()
         {
-            FetchJokeCommand = new Command(async () => await FetchJoke());
-            SaveJokeCommand = new Command(async () => await SaveJoke());
+            FetchBroma = new Command(async () => await FetchJoke());
+            GuardarBroma = new Command(async () => await SaveJoke());
             chistes = new ObservableCollection<Chiste>();
             InitializeDatabase();
         }

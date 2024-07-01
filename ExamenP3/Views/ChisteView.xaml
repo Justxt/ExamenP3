@@ -9,7 +9,7 @@
         <local:ChisteViewModel/>
     </ContentPage.BindingContext>
     <StackLayout Padding="10">
-        <Button Text="Fetch Joke" Command="{Binding FetchJokeCommand}" />
+        <Button Text="Fetch Joke" Command="{Binding FetchBroma}" />
         <ListView x:Name="JokesListView" ItemsSource="{Binding Chistes}" SelectedItem="{Binding bromaselec}">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -22,7 +22,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="Save Selected Joke" Command="{Binding SaveJokeCommand}" />
+        <Button Text="Save Selected Joke" Command="{Binding GuardarBroma}" />
     </StackLayout>
 </ContentPage>
 
