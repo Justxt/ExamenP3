@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:ExamenP3.ViewModels"
+             x:Class="ExamenP3.Views.PersonajeView"
+             Title="PersonajeView">
+
+    <ContentPage.BindingContext>
+        <viewModels:PersonajeViewModel />
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10" Margin="5" HorizontalOptions="Center">
+            <Label FontSize="22" Text="{Binding Nombre}" VerticalOptions="End" />
+        </HorizontalStackLayout>
+        <Image Source="gon.jpg"
+                   SemanticProperties.Description="The dot net bot waving hello!"
+                   HeightRequest="250"
+                    Margin="5"/>
+
+        <Label Text="{Binding Message}" Margin="20" HorizontalOptions="Center" />
+        <Button Text="Corre a mi GITHUB" Command="{Binding JMShowMoreInfoCommand}" />
+    </VerticalStackLayout>
+</ContentPage>

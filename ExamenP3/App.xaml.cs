@@ -1,4 +1,6 @@
-﻿namespace ExamenP3
+﻿using ExamenP3.Views;
+
+namespace ExamenP3
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new ChisteView();
         }
     }
 }
