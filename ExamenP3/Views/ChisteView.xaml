@@ -10,7 +10,7 @@
     </ContentPage.BindingContext>
     <StackLayout Padding="10">
         <Button Text="Fetch Joke" Command="{Binding FetchJokeCommand}" />
-        <ListView x:Name="JokesListView" ItemsSource="{Binding Jokes}" SelectedItem="{Binding SelectedJoke}">
+        <ListView x:Name="JokesListView" ItemsSource="{Binding Chistes}" SelectedItem="{Binding bromaselec}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
